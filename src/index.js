@@ -1,17 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+// import App from './app';
+import '@fortawesome/fontawesome-free/js/all'
+import SimpleHabit from './components/simpleHabit';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
+  <React.StrictMode> {/* 콘솔이 두번씩 출력된다. 검사의 목적 */}
+    <SimpleHabit />
   </React.StrictMode>,
   document.getElementById('root')
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
